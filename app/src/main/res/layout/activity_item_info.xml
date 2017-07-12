@@ -6,33 +6,32 @@
     android:layout_height="match_parent"
     tools:context="org.yisonpylkita.oruko_client.ItemInfo">
 
-    <EditText
-        android:id="@+id/id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="id"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <TableLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="name"
-        tools:layout_editor_absoluteY="68dp"
-        tools:layout_editor_absoluteX="127dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="name" android:paddingRight="10dp"/>
+            <TextView android:text="" android:id="@+id/name"/>
+        </TableRow>
 
-    <EditText
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="description"
-        tools:layout_editor_absoluteY="122dp"
-        tools:layout_editor_absoluteX="127dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="id" android:paddingRight="10dp"/>
+            <TextView android:text="" android:id="@+id/id"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="description" android:paddingRight="10dp"/>
+            <TextView android:text="" android:id="@+id/description"/>
+        </TableRow>
+    </TableLayout>
 </android.support.constraint.ConstraintLayout>
