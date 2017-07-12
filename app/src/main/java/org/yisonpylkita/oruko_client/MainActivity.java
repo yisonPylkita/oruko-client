@@ -10,6 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String ITEM_INFO_JSON_NAME = "item_info_data";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ItemInfo.class);
-                MainActivity.this.startActivity(intent);
+                ItemInfoModel model = new ItemInfoModel();
+                model.name = "Foo";
+                model.id = "123";
+                model.description = "Some text";
+                intent.putExtra(ITEM_INFO_JSON_NAME, model.toString());
+                startActivity(intent);
             }
         });
     }

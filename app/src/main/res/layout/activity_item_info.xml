@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context="org.yisonpylkita.oruko_client.ItemInfo">
 
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="id"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="name"
+        tools:layout_editor_absoluteY="68dp"
+        tools:layout_editor_absoluteX="127dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="description"
+        tools:layout_editor_absoluteY="122dp"
+        tools:layout_editor_absoluteX="127dp" />
 </android.support.constraint.ConstraintLayout>
